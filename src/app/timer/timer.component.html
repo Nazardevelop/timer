@@ -1,0 +1,15 @@
+<p>
+  timer works!
+</p>
+<div class="timer">
+  <div class="timer__dial">
+    <span class="timer__hours">{{hours | number:'2.0'}}</span> :
+    <span class="timer__minutes">{{minutes | number:'2.0'}}</span>:
+    <span class="timer__seconds">{{seconds | number:'2.0'}}</span>
+  </div>
+  <div class="timer__actions">
+    <button class="timer__start-stop" (click)="changeTimerState()">Start/Stop</button>
+    <button class="timer__reset" (click)="resetTimer()">Reset</button>
+    <button class="timer__wait" id="waitBtn">Wait</button>
+  </div>
+</div>
