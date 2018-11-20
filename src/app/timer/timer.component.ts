@@ -91,5 +91,5 @@ export class TimerComponent implements OnInit, AfterViewInit, OnDestroy {
   resetMinutes() {
     this.minutes = 0;
   }
-  
+
 }
